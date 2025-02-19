@@ -6,7 +6,7 @@ interface PDFViewerProps {
 
 const PDFViewer: React.FC<PDFViewerProps> = ({ className }) => {
   // Assuming you copied the PDF to public/pdfs/
-  const pdfPath = process.env.PUBLIC_URL + '/pdfs/Models.pdf';
+  const pdfPath = `${process.env.PUBLIC_URL}/pdfs/models.pdf`;
 
   return (
     <div className={`pdf-viewer ${className || ''}`}>
