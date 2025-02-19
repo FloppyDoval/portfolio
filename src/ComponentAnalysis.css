@@ -1,0 +1,137 @@
+/* Main Container Styles */
+.analysis-sections {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  /* Section Styles */
+  .analysis-section {
+    margin-bottom: 3rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Headers */
+  .section-header {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #ED8936;
+  }
+  
+  /* Table Styles */
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .analysis-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    background-color: #fff;
+  }
+  
+  .analysis-table th {
+    background-color: #ED8936;
+    color: #fff;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+  }
+  
+  .analysis-table td {
+    padding: 1rem;
+    border: 1px solid #fffbf8;
+    vertical-align: top;
+  }
+  
+  .analysis-table tr:nth-child(even) {
+    background-color: #fffbf8;
+  }
+  
+  /* Category Column */
+  .category-column {
+    font-weight: 600;
+    background-color: #fffbf8;
+    width: 150px;
+  }
+  
+  /* List Styles */
+  .analysis-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .analysis-list li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .analysis-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #ffa500;
+  }
+  
+  /* Reflection Section */
+  .reflection-container {
+    background-color: #fffbf8;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+  }
+  
+  .reflection-header {
+    color: #333;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .reflection-text {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .reflection-points {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .reflection-points li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  
+  .reflection-points li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #ED8936;
+  }
+  
+  /* Strong Text */
+  .highlight {
+    color: #333;
+    font-weight: 600;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .analysis-sections {
+      padding: 1rem;
+    }
+    
+    .category-column {
+      width: 120px;
+    }
+  }
