@@ -32,8 +32,8 @@ const ImageSlideshow = ({ images }: { images: ImageAssets }) => {
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <div style={{ 
         position: 'relative', 
-        width: '600px', 
-        height: '300px',
+        width: '900px', 
+        height: '600px',
         backgroundColor: '#f0f0f0',
         marginBottom: '20px'
       }}>
