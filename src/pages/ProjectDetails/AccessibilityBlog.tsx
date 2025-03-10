@@ -13,9 +13,7 @@ const AccessibilityBlog: React.FC = () => {
       <section className="project-overview">
         <h2>Overview</h2>
         <p>
-          Syntax is a code racer web app designed to help developers practice coding faster and learn
-          the syntax of new programming languages. The application provides an interactive environment
-          where users can race against time or other developers to improve their coding speed and accuracy.
+         
         </p>
       </section>
       

@@ -9,7 +9,7 @@ const projects = [
     id: 'personas',
     title: '✎ Personas & Storyboard ᝰ',
     subtitle: 'React, Chakra UI, TypeScript, Java',
-    description: 'A code racer web app to practice coding faster and learn the syntax of new languages.',
+    description: "User research, Personas, and Storyboarding of a user's journey using a hot beverages vending machine",
     tags: ['UX Research'],
     thumbnail: "../images/coffee_icon.png",
     path: '/projects/Personas'
