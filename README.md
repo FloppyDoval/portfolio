@@ -1,1 +1,1 @@
-[Portfolio! ]([url](https://floppydoval.github.io/portfolio/))
+[Portfolio](https://floppydoval.github.io/portfolio/)
