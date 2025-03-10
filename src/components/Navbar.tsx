@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <Link to="/"><img src={floppy} className="logo-icon"></img></Link>
+        <Link to="/"><img src={floppy} alt="FLoppy disk logo" className="logo-icon"></img></Link>
       </div>
       <div className="navbar-links">
         <Link 
