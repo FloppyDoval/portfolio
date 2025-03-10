@@ -16,10 +16,9 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 function App() {
-  const baseUrl = process.env.PUBLIC_URL || '';
   
   return (
-    <Router basename={baseUrl}>
+    <Router>
       <div className="App">
         <Navbar />
         <main>
@@ -29,8 +28,6 @@ function App() {
             <Route path="/experience" element={<Experience />} />
             <Route path="/projects/accessibility-blog" element={<AccessibilityBlog />} />
             <Route path="/projects/personas" element={<Personas />} />
-
-            {/* <Route path="*" element={<NotFound />} /> */}
           </Routes>
         </main>
         <Footer />

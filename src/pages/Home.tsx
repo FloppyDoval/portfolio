@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
 import ProjectCard from '../components/ProjectCard';
+import coffee from "../images/coffee_icon.png";
 
 const projects = [
   {
@@ -10,7 +11,7 @@ const projects = [
     subtitle: 'React, Chakra UI, TypeScript, Java',
     description: 'A code racer web app to practice coding faster and learn the syntax of new languages.',
     tags: ['UX Research'],
-    thumbnail: process.env.PUBLIC_URL + '/images/personas-thumbnail.png',
+    thumbnail: "../images/coffee_icon.png",
     path: '/projects/Personas'
   },
   {
