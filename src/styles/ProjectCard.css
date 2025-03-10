@@ -1,0 +1,129 @@
+/* ProjectCard.css */
+
+.project-card {
+  width: 100%;
+  height: 14rem; /* 56px converted to rem */
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+/* Background elements */
+.project-background {
+  position: absolute;
+  inset: 0;
+  background-color: white;
+}
+
+/* .accent-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 6rem;
+  height: 6rem;
+  background-color: rgba(254, 252, 255, 0.1); /* purple-100 with opacity
+  border-bottom-left-radius: 100%;
+  opacity: 0.5;
+} 
+*/
+
+/* Content container */
+.project-content {
+  position: absolute;
+  inset: 0;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title style */
+.project-title {
+  color: rgb(85, 26, 139); /* purple-800 */
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Hover content */
+.project-hover-content {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  opacity: 0;
+  transform: translateY(0.625rem);
+  transition: all 0.3s ease;
+}
+
+.project-hover-content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Description */
+.project-description {
+  color: rgb(75, 85, 99); /* gray-600 */
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+/* Tags */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  padding: 0.25rem 0.5rem;
+  background-color: rgba(147, 51, 234, 0.1); /* purple-100 */
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  color: rgb(126, 34, 206); /* purple-600 */
+}
+
+/* View details button */
+.project-view-details {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: rgb(126, 34, 206); /* purple-600 */
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.arrow-icon {
+  margin-left: 0.25rem;
+  transition: transform 0.3s ease;
+}
+
+.project-view-details:hover .arrow-icon {
+  transform: translateX(0.25rem);
+}
+
+/* Purple bottom border */
+.project-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.25rem;
+  background-color: rgb(213, 171, 249); /* purple-500 */
+}

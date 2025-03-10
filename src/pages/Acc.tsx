@@ -1,14 +1,14 @@
 import React from 'react';
-import './Acc.css';
-import images from "./imageAssets";
-import ImageSlideshow from './ImageSlideshow';
-import ComponentAnalysis from './ComponentAnalysis';
-import PDFViewer from './PDFViewer';
-import ComponentSection from './toggle';
-import before from './images/before.png'
-import after from './images/after.png'
+import '../Acc.css';
+import images from "../imageAssets";
+import ImageSlideshow from '../ImageSlideshow';
+import ComponentAnalysis from '../ComponentAnalysis';
+import PDFViewer from '../PDFViewer';
+import ComponentSection from '../toggle';
+import before from '../images/before.png'
+import after from '../images/after.png'
 
-import './ComponentAnalysis.css';
+import '../ComponentAnalysis.css';
 
 
 // interface TableData {
@@ -90,7 +90,8 @@ const App: React.FC = () => {
           <img src={after} alt="state diagram of before changes"></img>
           <PDFViewer />
         </section>
-        <div className="reflection-container">
+        <section>
+        <div className="container">
           <h3 className="subsection-header">⟡ Trade-Offs Analysis ⟡</h3>
           <ul className="reflection-list">
             <li>
@@ -113,6 +114,7 @@ const App: React.FC = () => {
             <li>Announce changes dynamically (e.g., "FAQ expanded/collapsed" via live regions).</li>
           </ul>
         </div>
+        </section>
         <section className="section">
           <h2 className="sectionTitle">Design Iterations (Interactive Figma Prototype)</h2>
           <p><strong>Please hover over and click anywhere in the first question box to see a sample improvement from the DoggyLawn website accordion component.</strong></p>

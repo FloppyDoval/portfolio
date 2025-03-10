@@ -1,44 +1,39 @@
-// App.tsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import ImageSlideshow from './ImageSlideshow';
-import PDFViewer from './PDFViewer';
-import ImageAssets from './imageAssets';
-import ComponentAnalysis from './ComponentAnalysis';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
-function App() {
-  return (
-    <Router basename="/accesibility-blog">
-      <div className="App">
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/slideshow">Image Slideshow</Link>
-            </li>
-            <li>
-              <Link to="/pdf">PDF Viewer</Link>
-            </li>
-            <li>
-              <Link to="/analysis">Component Analysis</Link>
-            </li>
-          </ul>
-        </nav>
+// Pages
+import Home from './pages/Home';
+import About from './pages/About';
+import Experience from './pages/Experience';
+import AccessibilityBlog from './pages/ProjectDetails/AccessibilityBlog';
+import Personas from './pages/ProjectDetails/Personas';
 
-        <Routes>
-          <Route path="/" element={
-            <div>
-              <h1>Accessibility Blog</h1>
-              <p>Welcome to our exploration of web accessibility components.</p>
-            </div>
-          } />
-          <Route path="/slideshow" element={<ImageSlideshow images={ImageAssets}/>} />
-          {/* <Route path="/pdf" element={<PDFViewer />} /> */}
-          <Route path="/analysis" element={<ComponentAnalysis />} />
-        </Routes>
+// import NotFound from './pages/NotFound';
+
+// Components
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+
+function App() {
+  const baseUrl = process.env.PUBLIC_URL || '';
+  
+  return (
+    <Router basename={baseUrl}>
+      <div className="App">
+        <Navbar />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/projects/accessibility-blog" element={<AccessibilityBlog />} />
+            <Route path="/projects/personas" element={<Personas />} />
+
+            {/* <Route path="*" element={<NotFound />} /> */}
+          </Routes>
+        </main>
+        <Footer />
       </div>
     </Router>
   );

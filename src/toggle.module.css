@@ -1,0 +1,73 @@
+.container {
+    width: 100%;
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .toggleButton {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #f3f4f6;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease;
+  }
+  
+  .toggleButton:hover {
+    background-color: #e5e7eb;
+  }
+  
+  .toggleButton:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+  }
+  
+  .title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .content {
+    margin-top: 1rem;
+    transition: all 0.2s ease;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .listItem {
+    margin-bottom: 0.5rem;
+  }
+  
+  .section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .sectionContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .attribution {
+    font-size: 0.875rem;
+    font-style: italic;
+    margin-top: 1rem;
+  }
