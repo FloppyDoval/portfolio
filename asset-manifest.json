@@ -1,19 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.729c5da8.css",
-    "main.js": "/portfolio/static/js/main.6077703e.js",
+    "main.css": "/portfolio/static/css/main.a5d33ff7.css",
+    "main.js": "/portfolio/static/js/main.6a8e3a78.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/madrid_gif.mov": "/portfolio/static/media/madrid_gif.53177002a8a9b4fcd215.mov",
     "static/media/storyboard.png": "/portfolio/static/media/storyboard.848decb235eaefd4ae3c.png",
     "static/media/vending_machine.png": "/portfolio/static/media/vending_machine.970ef5f136d0798e5cae.png",
+    "static/media/ipad.png": "/portfolio/static/media/ipad.398f56c4d132ad4b3139.png",
+    "static/media/website.png": "/portfolio/static/media/website.1c1f6b5767d0523a01ee.png",
+    "static/media/styleGuide.png": "/portfolio/static/media/styleGuide.13e555c361fec67622ce.png",
+    "static/media/mobile.png": "/portfolio/static/media/mobile.c8d5419166f455d73d1a.png",
     "static/media/greg_empathy.png": "/portfolio/static/media/greg_empathy.ce63e8ec5f4f14ba643f.png",
     "static/media/nina_empathy.png": "/portfolio/static/media/nina_empathy.d916a37e4f5eef1a6002.png",
     "index.html": "/portfolio/index.html",
-    "main.729c5da8.css.map": "/portfolio/static/css/main.729c5da8.css.map",
-    "main.6077703e.js.map": "/portfolio/static/js/main.6077703e.js.map",
+    "main.a5d33ff7.css.map": "/portfolio/static/css/main.a5d33ff7.css.map",
+    "main.6a8e3a78.js.map": "/portfolio/static/js/main.6a8e3a78.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.729c5da8.css",
-    "static/js/main.6077703e.js"
+    "static/css/main.a5d33ff7.css",
+    "static/js/main.6a8e3a78.js"
   ]
 }
