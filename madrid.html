@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madrid European Bakery</title>
+    <link rel="stylesheet" href="bakery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>    
+<input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+<header class="header">
+    <label for="menu-toggle" class="nav-button" aria-label="Toggle navigation menu">
+        <span class="icon-menu">☰</span>
+    </label>
+    
+    <div class="logo">
+        <img src="images/madrid-logo.png" alt="Madrid European Bakery & Patisserie logo">
+    </div>
+    
+    <button class="cart-button" aria-label="View shopping cart">
+        <span class="icon-cart">🛒</span>
+        <span class="cart-count">0</span>
+    </button>
+</header>
+
+<!-- Navigation menu -->
+<nav class="site-nav">
+    <ul class="nav-links">
+        <li class="nav-section-title">Our Bakery</li>
+        <li><a href="#specialties-heading">Our Specialties</a></li>
+        <li><a href="#locations-heading">Find Us</a></li>
+        
+        <li class="nav-section-title">Our Menu</li>
+        <li><a href="#dessert-heading">Cakes & Dessert Slices</a></li>
+        <li><a href="#chocolate-heading">Chocolate Creations</a></li>
+        <li><a href="#specialty-heading">Specialty Pastries</a></li>
+        <li><a href="#cookies-heading">Cookies</a></li>
+        <li><a href="#croissants-heading">Croissants & Pastry</a></li>
+    </ul>
+</nav>
+
+<label for="menu-toggle" class="menu-overlay"></label>
+        
+        <div class="banner" role="banner">
+            <p>A Little Piece of Madrid in PVD & NOW Barrington</p>
+        </div>
+        
+        <main id="main-content">
+            <section class="specialties" aria-labelledby="specialties-heading">
+                <h1 id="specialties-heading">Our Specialties</h1>
+                
+                <div class="product-grid">
+                    <article class="product-card">
+                        <img class="product-image" src="images/pain-au-chocolat.png" alt="Pain au Chocolat - Buttery croissant filled with rich dark chocolate">
+                        <h2>Pain au Chocolat</h2>
+                        <p>Buttery croissant filled with rich dark chocolate.</p>
+                        <button class="primary-button">Add to Order</button>
+                    </article>
+                    
+                    <article class="product-card">
+                        <img class="product-image" src="images/eclair.png" alt="Éclair - Buttery pastry filled with cream and topped with chocolate">
+                        <h2>Éclair</h2>
+                        <p>Buttery croissant filled with rich dark chocolate.</p>
+                        <button class="primary-button">Add to Order</button>
+                    </article>
+                    
+                    <article class="product-card">
+                        <img class="product-image" src="images/croissant.png" alt="Croissant - Buttery layered pastry with a flaky exterior">
+                        <h2>Croissant</h2>
+                        <p>Buttery croissant filled with rich dark chocolate.</p>
+                        <button class="primary-button">Add to Order</button>
+                    </article>
+                </div>
+                
+                <nav class="menu-navigation" aria-label="Menu categories">
+                    <div class="menu-nav-container">
+                        <a href="#dessert-heading" class="secondary-button">Cakes & Desserts</a>
+                        <a href="#chocolate-heading" class="secondary-button">Chocolate Creations</a>
+                        <a href="#specialty-heading" class="secondary-button">Specialty Pastries</a>
+                        <a href="#cookies-heading" class="secondary-button">Cookies</a>
+                        <a href="#croissants-heading" class="secondary-button">Croissants</a>
+                    </div>
+                </nav>
+
+            </section>
+
+            
+        <section id="menu" class="menu-section" aria-labelledby="dessert-heading">
+            <h2 id="dessert-heading">Cakes & Dessert Slices</h2>
+            
+            <div class="menu-item">
+                <div class="menu-item-description">
+                    <h3>Apple Tart</h3>
+                    <p>Apples over vanilla pastry cream filling a hand-made Pâte sablée butter cookie base. Sprinkled with cinnamon sugar.</p>
+                </div>
+                <div class="price-button-container">
+                <p class="price">$4.00</p>
+                <button class="add-to-cart-button" aria-label="Add Apple Tart to cart">+</button>
+            </div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="menu-item-description">
+                    <h3>Berry and Chantilly Filled Croissant</h3>
+                    <p>Artisan Croissant filled with fresh Crema Chantilly.</p>
+                </div>
+                <div class="price-button-container">
+                <p class="price">$5.00</p>
+                <button class="add-to-cart-button" aria-label="Add Croissant to cart">+</button>
+            </div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="menu-item-description">
+                    <h3>Chocolate Éclair</h3>
+                    <p>From scratch petit choux filled with diplomat creme and topped with chocolate ganache.</p>
+                </div>
+                <div class="price-button-container">
+                <p class="price">$6.00</p>
+                <button class="add-to-cart-button" aria-label="Add Chocolate Éclair to cart">+</button>
+                </div>
+            </div>
+        </section>
+</div>
+        <!-- Chocolate Desserts Section -->
+<section id="chocolate-desserts" class="menu-section" aria-labelledby="chocolate-heading">
+    <h2 id="chocolate-heading">Chocolate Creations</h2>
+    
+    <div class="menu-item">
+        <div class="menu-item-description">
+            <h3>Chocolate Ganache Tart</h3>
+            <p>Chocolate ganache and raspberry jam- all sitting in a hand-made Pâte sablée butter cookie shell. <em>Available whole by pre-order</em>.</p>
+        </div>
+        <div class="price-button-container">
+        <p class="price">$7.50</p>
+        <button class="add-to-cart-button" aria-label="Add Chocolate Ganache Tart to cart">+</button>
+    </div>
+    </div>
+    
+    <div class="menu-item">
+        <div class="menu-item-description">
+            <h3>Chocolate Hazelnut Tart</h3>
+            <p>A base layer of Chocolate Hazelnut Santiago topped with creamy Chocolate Mousse.</p>
+        </div>
+        <div class="price-button-container">
+        <p class="price">$6.50</p>
+        <button class="add-to-cart-button" aria-label="Add Chocolate Hazelnut Tart to cart">+</button>
+    </div>
+    </div>
+    
+    <div class="menu-item">
+        <div class="menu-item-description">
+            <h3>Chocolate Mousse Cup</h3>
+            <p>Layers of creamy Chocolate Mousse and chunks of our in-house Salted Dark Chocolate Chip Cookie.</p>
+        </div>
+        <div class="price-button-container">
+        <p class="price">$5.75</p>
+        <button class="add-to-cart-button" aria-label="Add Chocolate Mousse Cup to cart">+</button>
+    </div>
+    </div>
+    
+    <div class="menu-item">
+        <div class="menu-item-description">
+            <h3>Chocolate Raspberry Cake</h3>
+            <p>Delicate layers of chocolate cake, raspberry jam and chocolate mousse, topped with decadent chocolate ganache. <em>Available whole by pre-order</em>.</p>
+        </div>
+        <div class="price-button-container">
+        <p class="price">$8.50</p>
+        <button class="add-to-cart-button" aria-label="Add Chocolate Raspberry Cake to cart">+</button>
+    </div>
+    </div>
+</section>
+
+<!-- Specialty Pastries Section -->
+<section id="specialty-pastries" class="menu-section" aria-labelledby="specialty-heading">
+    <h2 id="specialty-heading">Specialty Pastries</h2>
+    
+    <div class="menu-item">
+        <div class="menu-item-description">
+            <h3>Costrada</h3>
+            <p>Flaky puff pastry layered with pastry cream and topped with french merengue and caramelized sliced almonds. <em>An Alcalá de Henares specialty!</em></p>
+        </div>
+        <div class="price-button-container">
+        <p class="price">$6.75</p>
+        <button class="add-to-cart-button" aria-label="Add Costrada to cart">+</button>
+    </div>
+    </div>
+    
+    <div class="menu-item">
+        <div class="menu-item-description">
+            <h3>Creme Brulee Filled Croissant</h3>
+            <p>Artisan Croissant filled with caramelized crème brûlée.</p>
+        </div>
+        <div class="price-button-container">
+        <p class="price">$5.50</p>
+        <button class="add-to-cart-button" aria-label="Add Creme Brulee Filled Croissant to cart">+</button>
+    </div>
+    </div>
+    
+    <div class="menu-item">
+        <div class="menu-item-description">
+            <h3>Lemon-Lime Tart</h3>
+            <p>A base layer of Lemon Santiago topped with from scratch Lime Curd.</p>
+        </div>
+        <div class="price-button-container">
+        <p class="price">$5.25</p>
+        <button class="add-to-cart-button" aria-label="Add Lemon-Lime Tart to cart">+</button>
+    </div>
+    </div>
+    
+    <div class="menu-item">
+        <div class="menu-item-description">
+            <h3>Vanilla San Marcos</h3>
+            <p>Delicate layers of vanilla cake and fresh crema chantilly, topped with caramelized crème brûlée. <em>Available whole by pre-order</em>.</p>
+        </div>
+        <div class="price-button-container">
+        <p class="price">$7.75</p>
+        <button class="add-to-cart-button" aria-label="Add Vanilla San Marcos to cart">+</button>
+    </div>
+    </div>
+</section>
+
+<!-- Cookies Section -->
+<section id="cookies" class="menu-section" aria-labelledby="cookies-heading">
+    <h2 id="cookies-heading">Cookies</h2>
+    
+    <div class="menu-item">
+        <div class="menu-item-description">
+            <h3>Palmera</h3>
+            <p>Caramelized puff pastry shaped like a palm leaf, with a delicate buttery flavor.</p>
+        </div>
+        <div class="price-button-container">
+        <p class="price">$3.25</p>
+        <button class="add-to-cart-button" aria-label="Add Palmera to cart">+</button>
+    </div>
+    </div>
+    
+    <div class="menu-item">
+        <div class="menu-item-description">
+            <h3>Salted Dark Chocolate Chip Cookie</h3>
+            <p>Our signature cookie featuring premium dark chocolate chips and a hint of sea salt.</p>
+        </div>
+        <div class="price-button-container">
+        <p class="price">$3.50</p>
+        <button class="add-to-cart-button" aria-label="Add Salted Dark Chocolate Chip Cookie to cart">+</button>
+    </div>
+    </div>
+</section>
+
+<!-- Croissants Section -->
+<section id="croissants" class="menu-section" aria-labelledby="croissants-heading">
+    <h2 id="croissants-heading">Croissants & Pastry</h2>
+    
+    <div class="menu-item">
+        <div class="menu-item-description">
+            <h3>Almond Croissant</h3>
+            <p>Buttery croissant filled with almond cream and topped with sliced almonds.</p>
+        </div>
+        <div class="price-button-container">
+        <p class="price">$4.50</p>
+        <button class="add-to-cart-button" aria-label="Add Almond Croissant to cart">+</button>
+    </div>
+    </div>
+    
+    <div class="menu-item">
+        <div class="menu-item-description">
+            <h3>Butter Croissant</h3>
+            <p>Classic French-style croissant made with premium European butter.</p>
+        </div>
+        <div class="price-button-container">
+        <p class="price">$3.75</p>
+        <button class="add-to-cart-button" aria-label="Add Butter Croissant to cart">+</button>
+    </div>
+    </div>
+    
+    <div class="menu-item">
+        <div class="menu-item-description">
+            <h3>Chocolate Croissant</h3>
+            <p>Buttery croissant filled with premium dark chocolate.</p>
+        </div>
+        <div class="price-button-container">
+        <p class="price">$4.25</p>
+        <button class="add-to-cart-button" aria-label="Add Chocolate Croissant to cart">+</button>
+    </div>
+    </div>
+    
+    <div class="menu-item">
+        <div class="menu-item-description">
+            <h3>Cinnamon Roll</h3>
+            <p>Flaky pastry swirled with cinnamon sugar and topped with vanilla glaze.</p>
+        </div>
+        <div class="price-button-container">
+        <p class="price">$4.75</p>
+        <button class="add-to-cart-button" aria-label="Add Cinnamon Roll to cart">+</button>
+    </div>
+    </div>
+</section>
+
+        
+        <section id="locations" class="locations-section" aria-labelledby="locations-heading">
+            <h2 id="locations-heading">Find Us</h2>
+            <div class="locations-container">
+                <div class="location-card">
+                    <h3>Providence</h3>
+                    <p>199 Wayland Ave</p>
+                    <p>Providence, RI 02906</p>
+                    <p>Tel: (401) 409-2300</p>
+                    <p>Hours: Everyday 7am-7pm</p>
+                </div>
+                
+                <div class="location-card">
+                    <h3>Barrington</h3>
+                    <p>230 County Rd. Barrington</p>
+                    <p>Barrington, RI 02806</p>
+                    <p>Tel: (401) 409-2300</p>
+                    <p>Hours: Everyday 7am-7pm</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Phone: (401) 555-1234</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/madrideuropeanbakery/?hl=en" aria-label="Follow us on Instagram">Instagram</a>
+                    <a href="https://www.facebook.com/pages/Madrid%20European%20Bakery%20And%20Patisserie/100815698618923/#" aria-label="Follow us on Facebook">Facebook</a>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Madrid European Bakery Redesign by Floppy! All rights reserved.</p>
+        </div>
+    </footer>
+    <a href="#main-content" class="back-to-top-arrow" aria-label="Back to top">
+        <span>↑</span>
+    </a>
+</body>
+</html>
