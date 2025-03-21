@@ -8,6 +8,7 @@ import About from './pages/About';
 import Experience from './pages/Experience';
 import AccessibilityBlog from './pages/ProjectDetails/AccessibilityBlog';
 import Personas from './pages/ProjectDetails/Personas';
+import Responsive from './pages/ProjectDetails/responsive-redesign';
 
 // import NotFound from './pages/NotFound';
 
@@ -28,6 +29,7 @@ function App() {
             <Route path="/experience" element={<Experience />} />
             <Route path="/projects/accessibility-blog" element={<AccessibilityBlog />} />
             <Route path="/projects/personas" element={<Personas />} />
+            <Route path="/projects/responsive" element={<Responsive />} />
           </Routes>
         </main>
         <Footer />

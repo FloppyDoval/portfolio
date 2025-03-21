@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../styles/Navbar.css';
-import floppy from '../images/floppy_icon.png'
+import floppy from '../assets/images/floppy_icon.png'
 const Navbar: React.FC = () => {
   const location = useLocation();
   

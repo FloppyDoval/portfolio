@@ -1,10 +1,10 @@
 import React from 'react';
 import '../../styles/ProjectDetails.css';
 // Import the empathy map and storyboard images
-import ninaEmpathyMap from '../../images/nina_empathy.png';
-import gregEmpathyMap from '../../images/greg_empathy.png';
-import coffee from '../../images/vending_machine.png';
-import storyboard from '../../images/storyboard.png';
+import ninaEmpathyMap from '../../assets/images/nina_empathy.png';
+import gregEmpathyMap from '../../assets/images/greg_empathy.png';
+import coffee from '../../assets/images/vending_machine.png';
+import storyboard from '../../assets/images/storyboard.png';
 
 const Personas: React.FC = () => {
   return (

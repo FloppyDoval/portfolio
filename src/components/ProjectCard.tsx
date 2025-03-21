@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react'; // You'll need to install lucide-react
+import { ArrowRight } from 'lucide-react';
 import '../styles/ProjectCard.css';
 
 interface ProjectProps {
@@ -27,12 +27,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <Link to={project.path} className="project-link">
-        {/* Background with subtle accent */}
         <div className="project-background">
           <div className="accent-corner"></div>
         </div>
         
-        {/* Content container */}
         <div className="project-content">
           {/* Title that's always visible */}
           <h2 className="project-title">{project.title}</h2>
