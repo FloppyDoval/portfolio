@@ -9,6 +9,8 @@ import Experience from './pages/Experience';
 import AccessibilityBlog from './pages/ProjectDetails/AccessibilityBlog';
 import Personas from './pages/ProjectDetails/Personas';
 import Responsive from './pages/ProjectDetails/responsive-redesign';
+import Iterative from './pages/ProjectDetails/IterativeDesign';
+
 
 // import NotFound from './pages/NotFound';
 
@@ -30,6 +32,7 @@ function App() {
             <Route path="/projects/accessibility-blog" element={<AccessibilityBlog />} />
             <Route path="/projects/personas" element={<Personas />} />
             <Route path="/projects/responsive" element={<Responsive />} />
+            <Route path="/projects/iterative" element={<Iterative />} />
           </Routes>
         </main>
         <Footer />

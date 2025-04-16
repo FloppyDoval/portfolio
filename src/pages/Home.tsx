@@ -22,6 +22,15 @@ const projects = [
     tags: ["CSS", "HTML" ,"UI Design", "Style MockUps", "Frontend WebDev"],
     thumbnail: process.env.PUBLIC_URL + '/images/responsive-thumbnail.png',
     path: '/projects/Responsive'
+  },
+  {
+    id: 'iterative-design',
+    title: 'Iterative Design',
+    subtitle: '',
+    description: 'In this project, I found a website to be improved, identified the key usability and accessibility issues, created a Visual Design Style Guide and developed a responsive version of the website!',
+    tags: ["UI Design", "Style MockUps", "User Research"],
+    thumbnail: process.env.PUBLIC_URL + '/images/iterative-design-thumbnail.png',
+    path: '/projects/Iterative'
   }
 ];
 
