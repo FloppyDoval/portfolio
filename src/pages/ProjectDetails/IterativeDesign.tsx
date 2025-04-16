@@ -11,6 +11,7 @@ const Iterative: React.FC = () => {
           <span className="tag">UX Research</span>
           <span className="tag">User Interface</span>
           <span className="tag">Design</span>
+          <span className="tag">Figma</span>
         </div>
       </header>
       
