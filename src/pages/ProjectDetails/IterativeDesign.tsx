@@ -46,10 +46,10 @@ const Iterative: React.FC = () => {
           found <a href="https://miyagilabs.ai/">Miyagi Labs:</a>
           <div className="quote-container">
             <blockquote className="stylish-quote">
-              <span className="quote-marks">"</span>an AI-powered platform that
+              <span className="quote-marks">" </span>an AI-powered platform that
               transforms videos from content creators and professors into
               complete, interactive courses.
-              <span className="quote-marks">"</span>
+              <span className="quote-marks"> "</span>
             </blockquote>
           </div>
           <p>
