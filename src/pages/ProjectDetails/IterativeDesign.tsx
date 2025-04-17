@@ -38,10 +38,7 @@ const Iterative: React.FC = () => {
       <section className="project-overview">
         <h2>Overview 🖇️</h2>
         <p>
-          For this project, we explored the{" "}
-          <a href="https://www.ycombinator.com/companies?industry=Education">
-            YCombinator
-          </a>{" "}
+          For this project, we explored the <a href="https://www.ycombinator.com/companies?industry=Education">YCombinator </a>
           website and searched for startups in the Education sector. Were we
           found <a href="https://miyagilabs.ai/">Miyagi Labs:</a>
           <div className="quote-container">
@@ -53,14 +50,13 @@ const Iterative: React.FC = () => {
             </blockquote>
           </div>
           <p>
-            Scroll down to see our Style Guide, Wireframing and Hi-Fi prototype!
-            This time, our challenge was to{" "}
-            <b>
-              create an interactive Figma Prototype based solely on the
+            Scroll down to see our Style Guide, Wireframing and Hi-Fi prototypes!
+            This time, our challenge was to <b>create an interactive Figma Prototype based solely on the
               description of the startup without any reference to the current
               website.
             </b>
           </p>
+          <p>Please click through the <b>Final Figma Prototype</b> below</p>
         </p>
       </section>
       {/* <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/SYQeb09cQUl9h4kRmRFoNh/Miyagi-Labs---HiFi?node-id=10-3&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=10%3A3&embed-host=share" allowfullscreen></iframe> */}
@@ -349,11 +345,10 @@ const Iterative: React.FC = () => {
         </div>
         <p>
           We have also created an interactive prototypes based on the Hi-Fi
-          webpages we have designed. Please see the link{" "}
+          webpages we have designed. Please see the link
           <a href="https://www.figma.com/proto/SYQeb09cQUl9h4kRmRFoNh/Miyagi-Labs---HiFi?node-id=0-1&t=ta27Vm5v5v7HX1DF-1">
             here
           </a>
-          .
         </p>
       </section>
 
