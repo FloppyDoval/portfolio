@@ -32,15 +32,15 @@ const projects = [
     thumbnail: process.env.PUBLIC_URL + '/images/iterative-design-thumbnail.png',
     path: '/projects/Iterative'
   },
-  {
-    id: 'acc',
-    title: 'Accesible Design',
-    subtitle: '',
-    description: 'In this project, I found a website to be improved, identified the key usability and accessibility issues, created a Visual Design Style Guide and developed a responsive version of the website!',
-    tags: ["UI Design", "Style MockUps", "User Research"],
-    thumbnail: process.env.PUBLIC_URL + '/images/iterative-design-thumbnail.png',
-    path: '/projects/acc'
-  }
+  // {
+  //   id: 'acc',
+  //   title: 'Accesible Design',
+  //   subtitle: '',
+  //   description: 'In this project, I found a website to be improved, identified the key usability and accessibility issues, created a Visual Design Style Guide and developed a responsive version of the website!',
+  //   tags: ["UI Design", "Style MockUps", "User Research"],
+  //   thumbnail: process.env.PUBLIC_URL + '/images/iterative-design-thumbnail.png',
+  //   path: '/projects/acc'
+  // }
 ];
 
 const Home: React.FC = () => {
