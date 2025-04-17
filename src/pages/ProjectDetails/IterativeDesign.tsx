@@ -11,6 +11,7 @@ import ProfilePage from "../../assets/images/Profile Page.png";
 import NotesPage from "../../assets/images/My Notes.png";
 import FindCoursePage from "../../assets/images/Find Courses.png";
 import StyleGuide from "../../assets/images/Brand Guide.png";
+import ImageSlider from "../../components/ImageSlider";
 import { Upload } from "lucide-react";
 
 const Iterative: React.FC = () => {
@@ -87,6 +88,7 @@ const Iterative: React.FC = () => {
           We drew inspiration from modern, minimalistic portfolio layouts and
           peer feedback with content-focused designs.
         </p>
+        <ImageSlider />
       </section>
 
       <section className="interview-section">
