@@ -9,9 +9,6 @@
   .project-header {
     margin-bottom: 3rem;
   }
-  .project-text{
-
-  }
   
   .project-header h1 {
     font-size: 2.5rem;
@@ -73,6 +70,9 @@
     padding-bottom: 0.5rem;
   }
   
+  .project-details-text h3{
+    margin: 20px;
+  }
   .project-details-container p {
     margin-bottom: 1rem;
     font-size: 1.1rem;
@@ -99,6 +99,14 @@
     left: -1.5rem;
     color: #667eea;
     font-size: 1.2rem;
+  }
+  
+  .none ol{
+    padding-left: 20px;
+    margin-left: 0;
+  }
+  .none li:before {
+    content: none;
   }
   
   .links-container {

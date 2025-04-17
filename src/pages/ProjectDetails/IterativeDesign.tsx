@@ -86,46 +86,71 @@ const Iterative: React.FC = () => {
           the layout features clear divisions, mimicking common patterns users
           are already familiar with, which improves usability and intuitiveness.
           We drew inspiration from modern, minimalistic portfolio layouts and
-          peer feedback with content-focused designs. Some objective decisions
-          we made overall included: - A Consistent Color Palette orange + beige
-          tones: Promotes visual identity and emotional warmth. - Clear
-          Typography Hierarchy: Primary bold headers and secondary fonts are
-          used consistently for readability and emphasis. - Component
-          Reusability: Buttons, cards, and headers follow a style guide,
+          peer feedback with content-focused designs. 
+          <ImageSlider />
+          Some objective decisions we made overall included: 
+          <ul>
+          <li><b> A Consistent Color Palette orange + beige tones: </b>
+           Promotes visual identity and emotional warmth. </li>
+          <li><b>Clear Typography Hierarchy:</b>
+           Primary bold headers and secondary fonts are
+          used consistently for readability and emphasis. </li>
+          <li><b> Component Reusability:</b> Buttons, cards, and headers follow a style guide,
           enabling scalable design across the app. Decisions within the pages
-          included: - Clear Generate Course instructions, positioned at the
-          center with strong contrast, guiding users to the app’s main action. -
-          A Popular Courses Carousel: Gives users a quick preview of content;
-          encourages exploration and boosts engagement. - Minimal Top Nav:
-          Focuses attention on central interaction instead of distracting
-          options. - Structured Content Hierarchy. E.g. in the course page:
+          included: </li>
+          <li><b> Clear Generate Course instructions</b>, positioned at the
+          center with strong contrast, guiding users to the app’s main action. </li>
+          <li><b> -A Popular Courses Carousel:</b> Gives users a quick preview of content;
+          encourages exploration and boosts engagement. </li>
+          <li><b> Minimal Top Nav:</b> Focuses attention on central interaction instead of distracting
+          options. </li>
+          <li><b> Structured Content Hierarchy.</b> E.g. in the course page:
           Overview → Lessons → Knowledge Check flow makes it cognitively easy to
-          process. - Progress Tracking with Visual Feedback and a roadmap/
+          process. Progress Tracking with Visual Feedback and a roadmap/
           tracker map (not in figma file but in wireframes), lets users
-          understand where they are in the course and what is next. - Use of
-          Color for Feedback: Orange = interactive/important actions, Green =
-          success or helpful info, keeping visual language consistent. -
-          Category Segmentation for courses (e.g. K-12, College, Other), helps
-          users locate what they need faster. - The visual folder system in the
-          my notes page mimics a real world filing system, making it intutive
-          for users.
+          understand where they are in the course and what is next. </li>
+          <li><b> Use of Color for Feedback:</b> Orange = interactive/important actions, Green =
+          success or helpful info, keeping visual language consistent.</li> 
+          <li><b>Category Segmentation for courses</b> (e.g. K-12, College, Other), helps
+          users locate what they need faster. </li>
+          <li><b> The visual folder system</b> in the my notes page mimics a real world filing system, making it intutive
+          for users.</li>
+          </ul>
         </p>
-        <ImageSlider />
+        
       </section>
 
-      <section className="interview-section">
+
+      <section className="project-details-text">
         <h2>Critique 🔎</h2>
-        <p>intro</p>
+        <p>After creating our wireframes, we took part in a critique session which 
+          led to considerable design changes and the creation of our style guide 
+          to improve clarity, usability, and consistency across the site. Please 
+          see the finalized style guide in the next section.</p>
+          <h3>💡 What changed and Why?</h3>
         <div className="questions-list">
           <ul>
-            <li>Questions, etc</li>
+            <li><b>Cleaned up visual hierarchy →</b> Consistent spacing, padding, and screen widths.</li>
+            <li><b>Reconsidered pages displayed →</b>Removed non-essential pages (e.g., Progress Report, About Us) and developed more essential pages (e.g., active course page)</li>
+            <li><b>Created a coordinated color palette →</b>Consistent coloring across whole site.</li>
+            <li><b>Added a clickable logo for homepage return →</b>Improves navigation and user flow</li>
+            <li><b>Refined design details → </b>Redesigned elements to differentiable from the logo while maintaining cohesion and brand theme</li>
           </ul>
         </div>
-
-        <h2>Key Observations Across All Users 🗝</h2>
-        <ul>
-          <li>blabla</li>
-        </ul>
+        <h3>🧠 How We Finalized the Style Design</h3>
+        <p>Post critique meeting, our team met alone to discuss our site’s priorities and to figure out how to reflect that in our design. We came up with three priorities that put our user first: learnability, usability, and memorability. To do reflect those in design we:</p>
+        <div className="questions-list">
+          <ul>
+            <li>Used feedback from critique meetings to align colors, page hierarchy, layout spacing, and UI element designs</li>
+            <li>Created shared design components in Figma to improve consistency across final design</li>
+            <li>Made a shared style guide with a set color palette, font family, button designs, header, menu bar, etc.</li>
+            <li>Decided upon an orange based palette to reflect the theme and logo of Miyagi Labs</li>
+            <li>Chose clean and accessible fonts to ensure user readability </li>
+            <li>Prioritized whitespace and simplicity since the majority of users will be school aged children or busy college students</li>
+            <li>Design focused on learnability; supporting fast, intuitive use 
+            on all pages</li>
+          </ul>
+        </div>
       </section>
 
       <section className="personas-section">
@@ -332,17 +357,49 @@ const Iterative: React.FC = () => {
         </p>
       </section>
 
-      <section className="storyboard-section">
-        <h2>User Testing 🎬</h2>
-        <p>
-          Key Questions that guided us Key Findings Next Steps (any changes we
-          might want to consider, needs from the user, etc…)
-        </p>
-      </section>
+      <section className="project-details-text">
+        <h2>User Testing 🎥</h2>
+        <h3>💡 The Task</h3>
+        <p>We asked users to find and access the <i>My Notes</i> page for a course they’re taking. They were encouraged to talk through their thoughts while using our clickable prototype so we could objectively record any confusion, missed buttons, or unclear flows.</p>
+        <h3>📝 Testing Instructions</h3>
+        <div className="none">
+          <ol>
+            <li>Start on the homepage and discuss what components on the homepage seem most likely to take you in the direction of <i>My Notes?</i></li>
+            <li>Navigate through the course pages.</li>
+            <li>Try using both the navigation bar and buttons on the page and explain why you’re selecting the items you are.</li>
+            <li>Comment on anything that feels unclear, missing, or surprising.</li>
+            <li>Once complete, describe what you think is the most direct way to navigate to the <i>My Notes</i> page.</li>
+          </ol>
+        </div>
+        <h3>❓ Questions Asked</h3>
+        <ul>
+          <li>Was the navigation as expected?</li>
+          <li>You were on the Profile page multiple times. What were you looking for?</li>
+          <li>On a scale of 1-10, how was your experience when trying to view your notes? Why?</li>
+          <li>In the My notes section on the current course page, would you have liked to have another option in the notes section aside from the save button?</li>
+          <li>Why did it take you a long time before you found the “My Notes” button in the top menu bar?</li>
+          <li>Do you think it's helpful to have notes integrated to the lecture sections and view them in a different tab (My Notes)?</li>
+        </ul>
+        <h3>👓 Findings</h3>
+        <ul>
+          <li>Most users struggled to find My Notes</li>
+          <li>Users stated that button placement was too subtle and options in the top menu bar were confusing as they changed depending on which page user was currently accessing</li>
+          <li>Several clicked on items that weren’t yet functional</li>
+          <li>Users wanted: icons or logos for folders, sorting/filtering, and back buttons</li>
+          <li>Everyone liked the idea of a clean, dedicated notes section but with more control and access</li>
+        </ul>
+        <h3>🚀 Next Steps</h3>
+        <ul>
+          <li>Add <i>My Notes</i> links in more places (profile, sidebar, course pages)</li>
+          <li>Let users sort by date, class, or type of note</li>
+          <li>Explore collapsible menus and backwards navigation to make sure all necessary options are accessible via main menu</li>
+          <li>Keep header consistent throughout site</li>
+        </ul>
+        </section>
 
       <section className="reflection-section">
         <h2>Reflection & Insights 💭</h2>
-        <p>blabla</p>
+        <p>Our Miyagi Labs project taught us that effective design requires constant iteration and user feedback. Starting with wireframes, we refined our design through critique sessions, focusing on learnability, usability, and a consistent orange color palette that enhanced brand identity. User testing revealed navigation issues we hadn't anticipated, particularly with the My Notes feature, demonstrating that real user interaction exposes oversights that designers miss when familiar with their own systems. This experience reinforced that good design evolves through multiple refinement cycles and must continuously incorporate user perspectives to truly succeed.</p>
       </section>
     </div>
   );
