@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e47e03b9.css",
-    "main.js": "/portfolio/static/js/main.00008d3e.js",
+    "main.css": "/portfolio/static/css/main.94d72782.css",
+    "main.js": "/portfolio/static/js/main.434a15f0.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/madrid_gif.mov": "/portfolio/static/media/madrid_gif.53177002a8a9b4fcd215.mov",
     "static/media/demo.gif": "/portfolio/static/media/demo.86a2eef181175cf33640.gif",
@@ -10,31 +10,26 @@
     "static/media/vending_machine.png": "/portfolio/static/media/vending_machine.970ef5f136d0798e5cae.png",
     "static/media/ipad.png": "/portfolio/static/media/ipad.8f3f61225a4d39e50994.png",
     "static/media/mobile.png": "/portfolio/static/media/mobile.b6e4dcc2eb407683fdca.png",
-    "static/media/sk.png": "/portfolio/static/media/sk.0b670b0369fd7c67f852.png",
     "static/media/styleGuide.png": "/portfolio/static/media/styleGuide.b1105f2f222bc06863fe.png",
-    "static/media/after.png": "/portfolio/static/media/after.eaa2c5fa2e508ffd7ef5.png",
     "static/media/greg_empathy.png": "/portfolio/static/media/greg_empathy.ce63e8ec5f4f14ba643f.png",
     "static/media/nina_empathy.png": "/portfolio/static/media/nina_empathy.d916a37e4f5eef1a6002.png",
     "static/media/Lesson - Page.png": "/portfolio/static/media/Lesson - Page.1cfe9b18401c4b44aa18.png",
-    "static/media/ml.png": "/portfolio/static/media/ml.10334ae1bfe2e81e7053.png",
     "static/media/Login to Proceed Page.png": "/portfolio/static/media/Login to Proceed Page.6b12b6710462da8f4829.png",
     "static/media/Home Page.png": "/portfolio/static/media/Home Page.7c28594da60c1dcd064b.png",
-    "static/media/dog.png": "/portfolio/static/media/dog.4a510cb8edfe21dc20fb.png",
     "static/media/Brand Guide.png": "/portfolio/static/media/Brand Guide.04b5214dac1424e50fc4.png",
     "static/media/Create Account Page.png": "/portfolio/static/media/Create Account Page.bb224237e914eb483ff3.png",
     "static/media/Find Courses.png": "/portfolio/static/media/Find Courses.0dae0f4512bf9bf3996e.png",
     "static/media/My Notes.png": "/portfolio/static/media/My Notes.51609de3f07e2a420b6d.png",
-    "static/media/before.png": "/portfolio/static/media/before.d353fb225c17b990bf78.png",
     "static/media/Profile Page.png": "/portfolio/static/media/Profile Page.84ef51fc008aeb0cad60.png",
     "static/media/Upload Video Page (alternative version).png": "/portfolio/static/media/Upload Video Page (alternative version).1e8b39aaf561767a2209.png",
     "static/media/Generating Video (alternative version).png": "/portfolio/static/media/Generating Video (alternative version).4918794b07cd9afda229.png",
     "index.html": "/portfolio/index.html",
-    "main.e47e03b9.css.map": "/portfolio/static/css/main.e47e03b9.css.map",
-    "main.00008d3e.js.map": "/portfolio/static/js/main.00008d3e.js.map",
+    "main.94d72782.css.map": "/portfolio/static/css/main.94d72782.css.map",
+    "main.434a15f0.js.map": "/portfolio/static/js/main.434a15f0.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e47e03b9.css",
-    "static/js/main.00008d3e.js"
+    "static/css/main.94d72782.css",
+    "static/js/main.434a15f0.js"
   ]
 }
