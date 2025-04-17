@@ -37,10 +37,28 @@ const Iterative: React.FC = () => {
       <section className="project-overview">
         <h2>Overview 🖇️</h2>
         <p>
-          In this project, we decided to 
+          For this project, we explored the <a href="https://www.ycombinator.com/companies?industry=Education">YCombinator</a> website and searched for startups in the Education sector. 
+          Were we found <a href="https://miyagilabs.ai/">Miyagi Labs:</a>
+          <div className="quote-container">
+            <blockquote className="stylish-quote">
+              <span className="quote-marks">"</span>an AI-powered platform that transforms videos from content creators and professors into complete, interactive courses.<span className="quote-marks">"</span>
+            </blockquote>
+          </div>
+          <p>Scroll down to see our Style Guide, Wireframing and Hi-Fi prototype! This time, our challenge was to <b>create an interactive Figma Prototype 
+            based solely on the description of the startup without any reference to the current website.</b></p>
         </p>
       </section>
-
+      {/* <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/SYQeb09cQUl9h4kRmRFoNh/Miyagi-Labs---HiFi?node-id=10-3&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=10%3A3&embed-host=share" allowfullscreen></iframe> */}
+      <iframe 
+            style={{ border: "rgba(0, 0, 0, 0)", background: "rgba(0, 0, 0, 0)" }}
+            width="900"
+            height="650"
+            flex-direction="column"
+            align-items="center"
+            src="https://embed.figma.com/proto/SYQeb09cQUl9h4kRmRFoNh/Miyagi-Labs---HiFi?node-id=32-2&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=10%3A3&embed-host=share"
+            allowFullScreen
+            title="Accessibility UI/UX Design Iterations"
+          />
       <section className="project-details">
         <h2>Sketching and Wireframing ᝰ✍🏻</h2>
         <p>

@@ -1,7 +1,7 @@
 const images = {
-    ml: require("./images/ml.png"),
-    dog: require("./images/dog.png"),
-    sk: require("./images/sk.png"),
+    ml: require("./assets/images/ml.png"),
+    dog: require("./assets/images/dog.png"),
+    sk: require("./assets/images/sk.png"),
   };
   
   export default images;

@@ -5,8 +5,8 @@ import ImageSlideshow from '../ImageSlideshow';
 import ComponentAnalysis from '../ComponentAnalysis';
 import PDFViewer from '../PDFViewer';
 import ComponentSection from '../toggle';
-import before from '../images/before.png'
-import after from '../images/after.png'
+import before from '../assets/images/before.png';
+import after from '../assets/images/after.png'
 
 import '../ComponentAnalysis.css';
 
@@ -18,7 +18,7 @@ import '../ComponentAnalysis.css';
 //   doggieLawn: string[];
 // }
 
-const App: React.FC = () => {
+const Acc: React.FC = () => {
   return (
     <div className="blogContainer">
       <div className="content">
@@ -170,4 +170,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default Acc;
