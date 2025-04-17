@@ -86,7 +86,29 @@ const Iterative: React.FC = () => {
           the layout features clear divisions, mimicking common patterns users
           are already familiar with, which improves usability and intuitiveness.
           We drew inspiration from modern, minimalistic portfolio layouts and
-          peer feedback with content-focused designs.
+          peer feedback with content-focused designs. Some objective decisions
+          we made overall included: - A Consistent Color Palette orange + beige
+          tones: Promotes visual identity and emotional warmth. - Clear
+          Typography Hierarchy: Primary bold headers and secondary fonts are
+          used consistently for readability and emphasis. - Component
+          Reusability: Buttons, cards, and headers follow a style guide,
+          enabling scalable design across the app. Decisions within the pages
+          included: - Clear Generate Course instructions, positioned at the
+          center with strong contrast, guiding users to the app’s main action. -
+          A Popular Courses Carousel: Gives users a quick preview of content;
+          encourages exploration and boosts engagement. - Minimal Top Nav:
+          Focuses attention on central interaction instead of distracting
+          options. - Structured Content Hierarchy. E.g. in the course page:
+          Overview → Lessons → Knowledge Check flow makes it cognitively easy to
+          process. - Progress Tracking with Visual Feedback and a roadmap/
+          tracker map (not in figma file but in wireframes), lets users
+          understand where they are in the course and what is next. - Use of
+          Color for Feedback: Orange = interactive/important actions, Green =
+          success or helpful info, keeping visual language consistent. -
+          Category Segmentation for courses (e.g. K-12, College, Other), helps
+          users locate what they need faster. - The visual folder system in the
+          my notes page mimics a real world filing system, making it intutive
+          for users.
         </p>
         <ImageSlider />
       </section>
