@@ -35,6 +35,32 @@
     margin-bottom: 2.5rem;
   }
   
+  .project-tags .tag1 {
+    padding: 0.4rem 0.8rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    background-color: #ded5fd;
+  }
+
+  .project-tags .tag2 {
+    background-color: #d8f8fb;
+    padding: 0.4rem 0.8rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+  }
+  .project-tags .tag3 {
+    padding: 0.4rem 0.8rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    background-color: #fbc1e0;
+  }
+
+  .project-tags .tag4 {
+    padding: 0.4rem 0.8rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    background-color: #ffe4ba;
+  }
   .project-details-container h2 {
     font-size: 1.8rem;
     font-weight: 600;

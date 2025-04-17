@@ -25,11 +25,19 @@ const Iterative: React.FC = () => {
           <span className="tag">Figma</span>
         </div>
       </header>
-
+      <section className="project-overview">
+      <h2>Collaborators 👩🏻‍💻</h2>
+      <div className="project-tags">
+        <span className="tag1">Fatima Yousaf</span>
+        <span className="tag2">Shuyi Qi</span>
+        <span className="tag3">Sophia Sokolowsky</span>
+        <span className="tag4">Florencia Doval</span>
+      </div>
+      </section>
       <section className="project-overview">
         <h2>Overview 🖇️</h2>
         <p>
-          To add
+          In this project, we decided to 
         </p>
       </section>
 
@@ -63,7 +71,7 @@ const Iterative: React.FC = () => {
       </section>
 
       <section className="personas-section">
-        <h2>Hi-Fi Prototype</h2>
+      <h2>Hi-Fi Prototype</h2> 
         <p>
           We developed high fidelity prototypes for the webpages based on the wireframes.
           For the Hi-Fi prototypes, we eliminated the About Us page, the checkout page, the progress tracker page and the creators page
