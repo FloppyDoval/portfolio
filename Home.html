@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floppy's Portfolio</title>
+    <link rel="stylesheet" href="./Home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="theme-toggle-container">
+        <button id="theme-toggle" aria-label="Toggle dark mode">
+            <div class="toggle-track">
+                <div class="toggle-moon">🌙</div>
+                <div class="toggle-sun">☀️</div>
+                <div class="toggle-thumb"></div>
+            </div>
+        </button>
+    </div>
+    <div class="container">
+        <div class="main-card">
+            <div class="intro-content">
+                <h1>Hi, I'm <span class="highlight">Floppy!</span></h1>
+                <p>I'm a Software Developer who loves to create innovative and useful apps</p>
+                <p>I'm a junior studying CS at Brown University</p>
+                <p>Incoming SWE @Duolingo</p>
+                
+                <!-- icon navigation -->
+                <div class="icon-nav">
+                    <a href="/portfolio/projects" class="icon-link">
+                        <div class="icon-box">
+                            <img src="images/folder_icon.png" alt="Projects icon">
+                        </div>
+                        <span>projects</span>
+                    </a>
+                    <a href="/experience" class="icon-link">
+                        <div class="icon-box">
+                            <img src="images/brief_icon.png" alt="Experience icon">
+                        </div>
+                        <span>experience</span>
+                    </a>
+                    <a href="/resume" class="icon-link">
+                        <div class="icon-box">
+                            <img src="images/resume_icon.png" alt="Resume icon">
+                        </div>
+                        <span>resume</span>
+                    </a>
+                    <a href="/links" class="icon-link">
+                        <div class="icon-box">
+                            <img src="images/link_icon.png" alt="Links icon">
+                        </div>
+                        <span>links</span>
+                    </a>
+                </div>
+            </div>
+            <div class="avatar">
+                <img src="images/my_doll.png" alt="Floppy avatar">
+            </div>
+        </div>
+
+        <!-- Grid layout for info cards -->
+        <div class="grid-layout">
+            <!-- Map Card --> 
+            <div class="map-card">
+                <div class="map-container">
+                    <div id="mapbox-map" class="map-image"></div>
+
+                </div>
+                <p id="distance-text" class="map-text">Calculating your distance...</p>
+                <p class="credit-text">Credits to <a href="https://www.joshwcomeau.com/">Josh Comeau</a> for the idea!</p>
+                <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+
+            </div>
+
+            <div class="card skills-card">
+                <p>Currently a junior studying CS at Brown University</p>
+                <p>Incoming SWE @Duolingo</p>
+            </div>
+
+            <!-- Name Card -->
+            <div class="card name-card">
+                <p>My name is Florencia, but Floppy <span>(yes, like floppy disks)</span> is a common nickname back home!</p>
+            </div>
+            
+            <!-- Interests Card -->
+            <div class="card interests-card">
+                <h3>👁️ Personal interests</h3>
+                <ul class="list-style">
+                    <li>Dancing & Choreographing</li>
+                    <li>Films</li>
+                    <li>Travelling</li>
+                    <li>Coffee Shop Hoping</li>
+                </ul>    
+            </div>
+
+            <!-- Learning Card -->
+            <div class="card learning-card">
+                <h3>Currently learning about:</h3>
+                <ul class="list-style">
+                    <p>IOS Development</p>
+                    <p>Deep Learning</p>
+                    <p>Machine Learning</p>
+                </ul>    
+            </div>
+            
+            <!-- Obsession Card -->
+            <div class="card obsession-card">
+                <h3>My current obsession:</h3>
+                <div class="spotify-embed">
+                    <img src="images/album.png" alt="Stateside Album">
+                </div>
+            </div>
+            
+            <!-- Current Projects Card -->
+            <div class="card obsession-card-empty">
+                <h3>Currently working on:</h3>
+                <ul class="list-style">
+                    <p>Berlin Entdecken Mobile App - SWIFT</p>
+                    <p>Implementing a Transformer from the Attention Is All You Need</p>
+                </ul>
+                </div>
+            </div>
+            
+            <!-- Fun Facts Card -->
+            <div class="card fun-facts-card">
+                <h3>Fun facts:</h3>
+                <ul class="list-style">
+                    <li>I did high school for two years in Japan but I don't speak Japanese :0</li>
+                    <li>I can speak/understand a bit of Guaraní (an official indigeneous language in Paraguay</li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            // Dark mode toggle functionality
+            const themeToggle = document.getElementById('theme-toggle');
+            const htmlElement = document.documentElement;
+            
+            // Check for saved theme preference or use device preference
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            
+            // Set initial theme
+            if (savedTheme) {
+                htmlElement.setAttribute('data-theme', savedTheme);
+            } else if (prefersDark) {
+                htmlElement.setAttribute('data-theme', 'dark');
+            }
+            
+            // Update toggle position
+            updateTogglePosition();
+            
+            // Toggle theme when button is clicked
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = htmlElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+                
+                htmlElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                
+                updateTogglePosition();
+            });
+            
+            function updateTogglePosition() {
+                const currentTheme = htmlElement.getAttribute('data-theme');
+                const toggleThumb = document.querySelector('.toggle-thumb');
+                
+                if (currentTheme === 'dark') {
+                    toggleThumb.style.transform = 'translateX(28px)';
+                } else {
+                    toggleThumb.style.transform = 'translateX(0)';
+                }
+            }
+        </script>
+        
+    </div>
+    <script>
+        const yourCoords = [-58.4438, -25.2637]; // Asunción, Paraguay
+    
+        fetch('https://ipapi.co/json/')
+        .then(res => res.json())
+        .then(data => {
+            const userCoords = [data.longitude, data.latitude];
+    
+            // Distance calculation (correct variable used)
+            const from = turf.point(yourCoords);
+            const to = turf.point(userCoords);
+            const distance = turf.distance(from, to, { units: 'kilometers' }).toFixed(2);
+    
+            document.getElementById('distance-text').innerHTML =
+              `I’m from Asunción, Paraguay, roughly <strong>${distance}km</strong> away from your current IP Address.`;
+    
+            // Call the map with proper coords
+            setupMap(userCoords);
+        })
+        .catch(err => {
+            document.getElementById('distance-text').textContent =
+              "Couldn't calculate your distance 😢";
+            console.error(err);
+        });
+    </script>
+    
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZmRvdmFsIiwiYSI6ImNtYTNlOW5yNzA2ZDEyd284ZTY2NnlqZWMifQ.aSgBaXEpQzn5AjDonCR_sQ';
+
+    function setupMap(userCoords) {
+    const map = new mapboxgl.Map({
+        container: 'mapbox-map',
+        style: 'mapbox://styles/mapbox/streets-v12',
+        center: userCoords,
+        zoom: 10,
+        maxZoom: 5,
+        pitch: 30,       
+        bearing: -10
+    });
+
+    const bounds = new mapboxgl.LngLatBounds();
+    bounds.extend(yourCoords);
+    bounds.extend(userCoords);
+
+    map.fitBounds(bounds, {
+    padding: 60,
+    duration: 1500,
+    maxZoom: 5
+    });
+
+    // Custom marker in Paraguay
+    const el = document.createElement('div');
+    el.className = 'custom-marker';
+    el.innerHTML = `<img src="images/doll_map.png" alt="Floppy in Paraguay" />`;
+
+    new mapboxgl.Marker(el)
+        .setLngLat(yourCoords)
+        .setPopup(new mapboxgl.Popup().setText("Me in Paraguay 🇵🇾"))
+        .addTo(map);
+
+    // User marker
+    new mapboxgl.Marker({ color: '#3b82f6' })
+        .setLngLat(userCoords)
+        .setPopup(new mapboxgl.Popup().setText("You (via IP)"))
+        .addTo(map);
+
+    // Add animated line
+    map.on('load', () => {
+        map.addSource('line', {
+        type: 'geojson',
+        data: {
+            type: 'Feature',
+            geometry: {
+            type: 'LineString',
+            coordinates: [userCoords, yourCoords]
+            }
+        }
+        });
+
+        map.addLayer({
+        id: 'line-animation',
+        type: 'line',
+        source: 'line',
+        paint: {
+            'line-color': '#6366f1',
+            'line-width': 4,
+            'line-dasharray': [0.5, 2],
+        }
+        });
+
+        function animateLine() {
+        if (!map.getLayer('line-animation')) {
+            return;
+        }
+
+        dashOffset += 0.1;
+        map.setPaintProperty('line-animation', 'line-dasharray', dashOffset);
+        requestAnimationFrame(animateLine);
+        }
+    });
+    }
+
+
+    </script>
+      
+</body>
+</html>
