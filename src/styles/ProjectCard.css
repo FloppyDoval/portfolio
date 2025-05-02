@@ -6,6 +6,7 @@
   border-radius: 0.5rem;
   overflow: hidden;
   position: relative;
+  border-radius: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
 }
@@ -26,7 +27,6 @@
 .project-background {
   position: absolute;
   inset: 0;
-  background-color: white;
 }
 
 /* .accent-corner {
@@ -77,9 +77,9 @@
 /* Description */
 .project-description {
   color: rgb(75, 85, 99); /* gray-600 */
-  font-size: 0.875rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
-  line-height: 1.4;
+  line-height: 2;
 }
 
 /* Tags */
@@ -95,7 +95,7 @@
   background-color: rgba(147, 51, 234, 0.1); /* purple-100 */
   border-radius: 0.25rem;
   font-size: 0.75rem;
-  color: rgb(126, 34, 206); /* purple-600 */
+  /* color: rgb(126, 34, 206); purple-600 */
 }
 
 /* View details button */
@@ -104,7 +104,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  color: rgb(126, 34, 206); /* purple-600 */
+  /* color: rgb(126, 34, 206); purple-600 */
   font-size: 0.875rem;
   font-weight: 500;
 }
@@ -126,4 +126,28 @@
   right: 0;
   height: 0.25rem;
   background-color: rgb(213, 171, 249); /* purple-500 */
+}
+
+/* Image styling */
+.project-image-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 50%;
+  height: 100%;
+  object-fit:cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
+
+/* Overlay that darkens the image on hover */
+.image-overlay {
+  position: absolute;
+  inset: 0;
 }

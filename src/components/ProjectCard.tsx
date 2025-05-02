@@ -3,22 +3,23 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import '../styles/ProjectCard.css';
 
-interface ProjectProps {
+export interface Project {
   id: string;
   title: string;
-  subtitle: string;
+  subtitle?: string;
   description: string;
   tags: string[];
-  thumbnail: string;
+  thumbnail?: string;
   path: string;
 }
 
 interface ProjectCardProps {
-  project: ProjectProps;
+  project: Project;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const imageSrc = project.thumbnail || 'https://via.placeholder.com/500x300';
   
   return (
     <div 
@@ -27,30 +28,33 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <Link to={project.path} className="project-link">
-        <div className="project-background">
-          <div className="accent-corner"></div>
+        {/* Image that shows by default and hides on hover */}
+        <div className={`project-image-container ${isHovered ? 'hidden' : ''}`}>
+          <img 
+            src={imageSrc} 
+            alt={project.title} 
+            className="project-image" 
+          />
+          <h2 className="image-title">{project.title}</h2>
         </div>
         
-        <div className="project-content">
-          {/* Title that's always visible */}
+        {/* Content that shows on hover */}
+        <div className={`project-content ${isHovered ? 'visible' : ''}`}>
           <h2 className="project-title">{project.title}</h2>
           
-          {/* Content that appears on hover */}
-          <div className={`project-hover-content ${isHovered ? 'visible' : ''}`}>
-            <p className="project-description">{project.description}</p>
-            
-            {project.tags.length > 0 && (
-              <div className="project-tags">
-                {project.tags.map((tag, index) => (
-                  <span key={index} className="tag">{tag}</span>
-                ))}
-              </div>
-            )}
-            
-            <div className="project-view-details">
-              <span>View details</span>
-              <ArrowRight size={16} className="arrow-icon" />
+          <p className="project-description">{project.description}</p>
+          
+          {project.tags.length > 0 && (
+            <div className="project-tags">
+              {project.tags.map((tag, index) => (
+                <span key={index} className="tag">{tag}</span>
+              ))}
             </div>
+          )}
+          
+          <div className="project-view-details">
+            <span>View details</span>
+            <ArrowRight size={16} className="arrow-icon" />
           </div>
         </div>
         
