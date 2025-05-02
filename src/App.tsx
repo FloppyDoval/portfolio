@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+// import React, { useEffect } from 'react';
 import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
 import About from './pages/About';
-import Home from '../src/pages/Home'
+// import Home from '../src/pages/Home'
 import Projects from './pages/Projects';
 import Experience from './pages/Experience';
 import Personas from './pages/ProjectDetails/Personas';

@@ -17,37 +17,31 @@ const Experience: React.FC = () => {
       title: "Brown University",
       role: "Computer Science ScB",
       date: "Sept 2022-May 2026",
-      link: { name: "Link", url: "#" },
+      link: { name: "Link", url: "https://www.brown.edu/undergraduate-programs/computer-science-ab-scb" },
     },
     {
       title: "UWC ISAK Japan",
-      role: "Teaching Assistant - HISP 200",
+      role: "IB Bilingual Diploma",
       date: "August 2020 - May 2022",
-      link: { name: "Link", url: "#" },
+      link: { name: "Link", url: "https://uwcisak.jp/" },
     },
     {
       title: "Duolingo Inc.",
       role: "Thrive Software Engineer Intern",
       date: "June - August 2024",
-      link: { name: "Slides", url: "#" },
+      link: { name: "Slides", url: "https:/duolingo.com" },
     },
     {
       title: "En la Plaza",
       role: "Founder and Co-Director",
       date: "February 2019 - Present",
-      link: { name: "Instagram", url: "#" },
+      link: { name: "Instagram", url: "https://www.instagram.com/enlaplazapy/" },
     },
     {
       title: "Latin American Leadership Academy",
       role: "Co-facilitator & Coach",
       date: "June 2022 - July 2023",
-      link: { name: "Website", url: "#" },
-    },
-    {
-      title: "Crimson Education",
-      role: "Research Intern",
-      date: "January - May 2022",
-      link: { name: "Brochure", url: "#" },
+      link: { name: "Website", url: "https://latinamericanleadershipacademy.org/" },
     }
   ];
 

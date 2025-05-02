@@ -10,15 +10,17 @@ const Navbar: React.FC = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <Link to="/Home.html"><img src={floppy} alt="Floppy disk logo" className="logo-icon"></img></Link>
+        <a href="https://floppydoval.github.io/portfolio/Home.html">
+          <img src={floppy} alt="Floppy disk logo" className="logo-icon" />
+        </a>
       </div>
       <div className="navbar-links">
-        <Link 
-          to="/Home.html" 
+        <a 
+          href="https://floppydoval.github.io/portfolio/Home.html" 
           className={location.pathname === '/portfolio' ? 'active' : ''}
         >
           Home
-        </Link>
+        </a>
         <Link 
           to="/projects" 
           className={location.pathname === '/projects' ? 'active' : ''}
