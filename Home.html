@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Floppy's Portfolio</title>
     <link rel="stylesheet" href="./Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -20,8 +22,40 @@
     <div class="container">
         <div class="main-card">
             <div class="intro-content">
-                <h1>Hi, I'm <span class="highlight">Floppy!</span></h1>
-                <p>I'm a Software Developer who loves to create innovative and useful apps</p>
+                <h1>Hi, I'm Floppy!</h1>
+                <h2 class="paragraph">I am <span id="role"></span></h2> 
+                <script>
+                    const roles = ["a Full Stack Developer", "a Mobile Developer", "an ML/DL Student"];
+                    let roleIndex = 0;
+                    let charIndex = 0;
+                    const typingSpeed = 50;
+                    const pauseBetweenWords = 1000;
+                    const typedText = document.getElementById("role");
+
+                    function type() {
+                    if (charIndex < roles[roleIndex].length) {
+                        typedText.textContent += roles[roleIndex].charAt(charIndex);
+                        charIndex++;
+                        setTimeout(type, typingSpeed);
+                    } else {
+                        setTimeout(erase, pauseBetweenWords);
+                    }
+                    }
+
+                    function erase() {
+                    if (charIndex > 0) {
+                        typedText.textContent = roles[roleIndex].substring(0, charIndex - 1);
+                        charIndex--;
+                        setTimeout(erase, typingSpeed / 2);
+                    } else {
+                        roleIndex = (roleIndex + 1) % roles.length;
+                        setTimeout(type, typingSpeed);
+                    }
+                    }
+
+                    type();
+                </script>
+                <p class="paragraph">I'm a Software Developer who loves to create innovative and useful applications</p>
                 <p>I'm a junior studying CS at Brown University</p>
                 <p>Incoming SWE @Duolingo</p>
                 
@@ -39,7 +73,7 @@
                         </div>
                         <span>experience</span>
                     </a>
-                    <a href="/resume" class="icon-link">
+                    <a href="images/resume.pdf" class="icon-link" download>
                         <div class="icon-box">
                             <img src="images/resume_icon.png" alt="Resume icon">
                         </div>
@@ -73,63 +107,118 @@
             </div>
 
             <div class="card skills-card">
-                <p>Currently a junior studying CS at Brown University</p>
-                <p>Incoming SWE @Duolingo</p>
-            </div>
+                <div class="skills-section">
+                    <h2>Skills ☆</h2>
+                    <div class="skills-grid">
+                        <div class="skills-column">
+                            <h3>Languages</h3>
+                            <ul>
+                                <li>Python</li>
+                                <li>JavaScript/TypeScript</li>
+                                <li>SWIFT</li>
+                                <li>C#/C++</li>
+                                <li>JAVA</li>
+                            </ul>
+                        </div>
+                        <div class="skills-column">
+                            <h3>Frameworks & Libraries</h3>
+                            <ul>
+                                <li>React</li>
+                                <li>NumPy</li>
+                                <li>TensorFlow, PyTorch, Keras</li>
+                                <li>Pandas, Scikit-learn</li>
+                                <li>Matplotlib, Seaborn</li>
+                            </ul>
+                        </div>
+                        <div class="skills-column">
+                            <h3>Tools</h3>
+                            <ul>
+                                <li>Git/GitHub</li>
+                                <li>Figma</li>
+                                <li>VS Code, XCode, IntelliJ</li>
+                                <li>Google Colab</li>
+                                <li>Postman</li>
+                                <li>Jira, Slack, Notion</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>    
+            </div>    
 
-            <!-- Name Card -->
-            <div class="card name-card">
-                <p>My name is Florencia, but Floppy <span>(yes, like floppy disks)</span> is a common nickname back home!</p>
-            </div>
-            
-            <!-- Interests Card -->
-            <div class="card interests-card">
-                <h3>👁️ Personal interests</h3>
-                <ul class="list-style">
-                    <li>Dancing & Choreographing</li>
-                    <li>Films</li>
-                    <li>Travelling</li>
-                    <li>Coffee Shop Hoping</li>
-                </ul>    
-            </div>
-
-            <!-- Learning Card -->
-            <div class="card learning-card">
-                <h3>Currently learning about:</h3>
-                <ul class="list-style">
-                    <p>IOS Development</p>
-                    <p>Deep Learning</p>
-                    <p>Machine Learning</p>
-                </ul>    
-            </div>
-            
-            <!-- Obsession Card -->
-            <div class="card obsession-card">
-                <h3>My current obsession:</h3>
-                <div class="spotify-embed">
-                    <img src="images/album.png" alt="Stateside Album">
+                <!-- Name Card -->
+                <!-- <div class="card name-card">
+                    <p>My name is Florencia, but Floppy <span>(yes, like Floppy Disks)</span> is a common nickname back home!</p>
+                </div> -->
+                
+                <!-- Interests Card -->
+                <div class="card learning-card">
+                    <h3>Personal interests</h3>
+                    · · ─ ·𖥸· ─ · ·
+                    <ul>
+                        <p>Dancing & Choreographing</p>
+                        <p>Language Learning</p>
+                        <p>Chess ♔♕♖♗</p>
+                    </ul>    
                 </div>
-            </div>
+
+                <!-- Learning Card -->
+                <div class="card learning-card">
+                    <h3>Currently learning:</h3>
+                    ···—–—⚜—–—···
+                    <ul>
+                        <p>IOS Development</p>
+                        <p>DL/ML</p>
+                        <p>German</p>
+                    </ul>
+                </div>    
             
             <!-- Current Projects Card -->
-            <div class="card obsession-card-empty">
+            <div class="card learning-card">
                 <h3>Currently working on:</h3>
-                <ul class="list-style">
-                    <p>Berlin Entdecken Mobile App - SWIFT</p>
-                    <p>Implementing a Transformer from the Attention Is All You Need</p>
+                ────୨ৎ────
+                <ul>
+                    <p>Berlin Entdecken Mobile App ↗</p>
+                    <p>Implementing a Transformer from the Attention Is All You Need paper ↗</p>
                 </ul>
-                </div>
             </div>
             
             <!-- Fun Facts Card -->
-            <div class="card fun-facts-card">
-                <h3>Fun facts:</h3>
-                <ul class="list-style">
-                    <li>I did high school for two years in Japan but I don't speak Japanese :0</li>
-                    <li>I can speak/understand a bit of Guaraní (an official indigeneous language in Paraguay</li>
+            <div class="card learning-card">
+                <h3>Fun facts ‧₊˚✩</h3>
+                <ul>
+                    <p>I did high school for 2 years in Japan but I don't speak Japanese.</p>
+                    <p>I can speak/understand a bit of Guaraní (an official indigeneous language in Paraguay)</p>
+                </ul>
+            </div>
+            <!-- Obsession Card -->
+            <div class="card learning-card">
+                <h3>My current obsession(s) 🎧⊹♡</h3>
+                <div class="spotify-embed">
+                    <iframe 
+                    style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/track/7Fr2Q6q3rAxFUcMkuvVrXO?utm_source=generator" 
+                    width="100%" 
+                    height="152" 
+                    frameBorder="0" 
+                    allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+            <!-- Languages Card -->
+            <div class="card learning-card">
+                <h3>I can speak these languages 𓅆</h3>
+                <ul>
+                    <p>Spanish (native)</p>
+                    <p>English (C2)</p>
+                    <p>Portuguese (C1)</p>
+                    <p>Korean (B2)</p>
+                    <p>German (A2)</p>
                 </ul>
             </div>
         </div>
+
         <script>
             // Dark mode toggle functionality
             const themeToggle = document.getElementById('theme-toggle');
@@ -209,10 +298,7 @@
         container: 'mapbox-map',
         style: 'mapbox://styles/mapbox/streets-v12',
         center: userCoords,
-        zoom: 10,
-        maxZoom: 5,
-        pitch: 30,       
-        bearing: -10
+        zoom: 2,
     });
 
     const bounds = new mapboxgl.LngLatBounds();
@@ -220,7 +306,7 @@
     bounds.extend(userCoords);
 
     map.fitBounds(bounds, {
-    padding: 60,
+    padding: 10,
     duration: 1500,
     maxZoom: 5
     });
@@ -279,6 +365,37 @@
 
 
     </script>
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-info">
+            <p>© <span id="footer-year"></span> | Florencia Doval</p>
+          </div>
+          <div class="footer-links">
+            <a
+              href="https://github.com/floppydoval"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon"
+            >
+              <i class="fab fa-github icon"></i>
+              <span class="icon-text"></span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/florenciadoval/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon"
+            >
+              <i class="fab fa-linkedin icon"></i>
+              <span class="icon-text"></span>
+            </a>
+          </div>
+        </div>
+      </footer>
+      <script>
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+      </script>
       
+        
 </body>
 </html>

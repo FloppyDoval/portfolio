@@ -1,25 +1,31 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e9c33b67.css",
-    "main.js": "/portfolio/static/js/main.a3539493.js",
+    "main.css": "/portfolio/static/css/main.020f25aa.css",
+    "main.js": "/portfolio/static/js/main.a6acc86a.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/madrid_gif.mov": "/portfolio/static/media/madrid_gif.53177002a8a9b4fcd215.mov",
+    "static/media/berlin_demo.gif": "/portfolio/static/media/berlin_demo.245c497802d3a815754b.gif",
     "static/media/demo.gif": "/portfolio/static/media/demo.86a2eef181175cf33640.gif",
+    "static/media/poster.svg": "/portfolio/static/media/poster.b4d8f76f68c164004931db09f8ae16e1.svg",
     "static/media/storyboard.png": "/portfolio/static/media/storyboard.848decb235eaefd4ae3c.png",
     "static/media/website.png": "/portfolio/static/media/website.5ab2dc1488cdd945ac8a.png",
     "static/media/vending_machine.png": "/portfolio/static/media/vending_machine.970ef5f136d0798e5cae.png",
+    "static/media/video_game_success_poster.png": "/portfolio/static/media/video_game_success_poster.8e69651605b5c6891418.png",
+    "static/media/berlin_map_screen.png": "/portfolio/static/media/berlin_map_screen.4bb8eef92c30b618a0e6.png",
     "static/media/ipad.png": "/portfolio/static/media/ipad.8f3f61225a4d39e50994.png",
     "static/media/mobile.png": "/portfolio/static/media/mobile.b6e4dcc2eb407683fdca.png",
     "static/media/styleGuide.png": "/portfolio/static/media/styleGuide.b1105f2f222bc06863fe.png",
     "static/media/w_userProfile.png": "/portfolio/static/media/w_userProfile.f5859a74dc0bda382b4b.png",
     "static/media/greg_empathy.png": "/portfolio/static/media/greg_empathy.ce63e8ec5f4f14ba643f.png",
     "static/media/w_courses.png": "/portfolio/static/media/w_courses.ac7503407658630c48f0.png",
+    "static/media/heatmap.jpg": "/portfolio/static/media/heatmap.3d359f6f735de759fcce.jpg",
     "static/media/nina_empathy.png": "/portfolio/static/media/nina_empathy.d916a37e4f5eef1a6002.png",
     "static/media/Lesson - Page.png": "/portfolio/static/media/Lesson - Page.1cfe9b18401c4b44aa18.png",
     "static/media/w_homepage.png": "/portfolio/static/media/w_homepage.a141c48398b9c00a7bdd.png",
     "static/media/Login to Proceed Page.png": "/portfolio/static/media/Login to Proceed Page.6b12b6710462da8f4829.png",
     "static/media/Home Page.png": "/portfolio/static/media/Home Page.7c28594da60c1dcd064b.png",
     "static/media/Brand Guide.png": "/portfolio/static/media/Brand Guide.04b5214dac1424e50fc4.png",
+    "static/media/loss-curve.jpg": "/portfolio/static/media/loss-curve.b005e093c540db02f868.jpg",
     "static/media/w_lecture.png": "/portfolio/static/media/w_lecture.c91f442fa1bc86f4e9a4.png",
     "static/media/Create Account Page.png": "/portfolio/static/media/Create Account Page.bb224237e914eb483ff3.png",
     "static/media/w_myNotes.png": "/portfolio/static/media/w_myNotes.d1cfeec51572557f4f55.png",
@@ -32,12 +38,12 @@
     "static/media/Upload Video Page (alternative version).png": "/portfolio/static/media/Upload Video Page (alternative version).1e8b39aaf561767a2209.png",
     "static/media/Generating Video (alternative version).png": "/portfolio/static/media/Generating Video (alternative version).4918794b07cd9afda229.png",
     "index.html": "/portfolio/index.html",
-    "main.e9c33b67.css.map": "/portfolio/static/css/main.e9c33b67.css.map",
-    "main.a3539493.js.map": "/portfolio/static/js/main.a3539493.js.map",
+    "main.020f25aa.css.map": "/portfolio/static/css/main.020f25aa.css.map",
+    "main.a6acc86a.js.map": "/portfolio/static/js/main.a6acc86a.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9c33b67.css",
-    "static/js/main.a3539493.js"
+    "static/css/main.020f25aa.css",
+    "static/js/main.a6acc86a.js"
   ]
 }
